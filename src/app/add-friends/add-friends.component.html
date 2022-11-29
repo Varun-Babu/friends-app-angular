@@ -6,21 +6,21 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Name</label>
-                    <input type="text" class="form-control">
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 
                     <div class="mb-3">
                     <label for="" class="form-label">Describe your friend</label>
-                      <textarea class="form-control" name="" id="" rows="3"></textarea>
+                      <textarea name="DescribeYourFriend" [(ngModel)]="DescribeYourFriend" class="form-control" name="" id="" rows="3"></textarea>
                     </div>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Nickname</label>
-                    <input type="text" class="form-control">
+                    <input name="friendNickName" [(ngModel)]="friendNickName"  type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-dark">Submit</button>
+                    <button (click)="readValue()"  class="btn btn-dark">Submit</button>
                 </div>
             </div>
         </div>
